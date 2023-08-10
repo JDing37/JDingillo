@@ -4,28 +4,50 @@
 <head>
     <title>Contact</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        #grid {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: repeat(20, 1fr);
+        }
+        .cell {
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="moving-background-wave">
+    <div class="moving-background-index">
 
-        <div class="contour-map" id="contourMap">
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About Me</a> 
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
 
-            <header>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="projects.html">Projects</a>
-                    <a href="about.html">About Me</a> 
-                    <a href="contact.html">Contact Me</a>
-                </nav>
-            </header>
-
-        </div>
-
+    <div class="paragraph-block">
+        <p>
+            If you would like to contact me for collaboration, discourse, or any other reason, 
+            feel free to use any of these links. <br>
+            Gmail: <a href="mailto:dingillo72@gmail.com">dingillo72@gmail.com</a> <br>
+            LinkedIn: <a href="https://www.linkedin.com/in/joey-dingillo-119436248/">Joey Dingillo</a><br>
+        </p>
     </div>
 
-    <script src="waveScript.js"></script>
+</div>
 
 </body>
 </html>
